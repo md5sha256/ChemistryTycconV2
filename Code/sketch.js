@@ -7,30 +7,13 @@ function preload()
   preloadIntro();
   preloadMainMenu();
   preloadPeriodicTable();
-  preloadShop()
-  //preloadMarket()
-  //preloadHydroCarbon()
-  //preloadQuiz()
-  //preloadCongrats()
-  //preloadRetry()
 }
 
 function setup()
 {
   canvasID = 2;
-  createCanvas(1200,1000);
-  fill(125,125,0);
-  setupIntro();
-  setupMainMenu();
-  setupPeriodicTable();
-  setupShop()
-  setupMaker()
-  //setupMarket()
-  //setupHydroCarbon()
-  //setupQuiz()
-  //setupCongrats()
-  //setupRetry()
-
+  createCanvas(1000,500);
+  setupMaker();
 }
 
 function draw()
@@ -43,38 +26,22 @@ function draw()
   {
     drawMainMenu()
   }
-  if (canvasID == 2)
-  {
-    drawPeriodicTable();
-  }
-  if (canvasID == 3)
-  {
-    drawShop()
-  }
   if (canvasID == -1)
   {
     drawMaker()
   }
+  if (canvasID == 2)
+  {
+    drawPeriodicTable()
+  }
 /*
-  if (canvasID == 4)
+  if (canvasID == 3)
   {
-    drawMarket()
-  }
-  if (canvasID == 5)
-  {
-    drawHydroCarbon()
-  }
-  if (canvasID == 6)
-  {
-    drawQuiz()
-  }
-  if (canvasID == 7)
-  {
-    drawCongrats()
+    drawGameMedium()
   }
   if (canvasID == 4)
   {
-    drawRetry()
+    drawGameHard()
   }
 */
 }

@@ -28,6 +28,14 @@ function drawMaker()
   //Group1(2) 235,150,0
   //Group2(1) 255,255,60
   //Group2(2) 235,235,60
+  //Metalloids(1)10,200,60
+  //Metalloids(2)10,180,60
+  //NonMetals(1)50,200,200
+  //NonMetals(2)50,180,200
+  //NobleGases(1)
+  //NobleGases(2)
+  //Group8(1) 0,175,225
+  //Group8(2) 0,150,200
   //Transition(1) 170,170,170
   //Transition(2) 200,200,200
   //Lanthanoids(1) 80,180,250
@@ -35,16 +43,15 @@ function drawMaker()
   //Actinoids(1) 30,180,230
   //Actinoids(2) 20,150,230
 
-
-  fill(200,200,200);
+  fill(50,200,200);
   rect(100,100,50,60);
   fill(0,0,0);
-  textSize(24)
-  text("Mn",atom1+0.5,atom2+5);
+  textSize(24);
+  text("Ti",atom1+5,atom2+5); //1
   textSize(10);
-  text("54.938",atom1+1.5,atom2+20);
+  text("204.38",atom1+1,atom2+20);
   textSize(15);
-  text("25",atom1+7.5,atom2-20);
+  text("81",atom1+8,atom2-20);
 
 
 /*
